@@ -22,15 +22,29 @@ You must use a 2D array for this lab.
 
 */
 
+import java.util.Scanner;
 
 public class Lab6{
 	public static void main(String[] args){
 
 
 		//create 2d array for game board : 6 rows 7 columns
+		//fill game board with * representing empty holes
+		String[][] gameBoard = new String[6][7];
+
+		for(int i = 0; i < gameBoard.length; i++){
+			for(int j = 0; j < gameBoard[i].length; j++){
+				gameBoard[i][j] = "*";
+				System.out.print(gameBoard[i][j] + " ");
+			}
+			System.out.println("");
+		}
+		
+		//fill with "X" for user1 and "O" for user2
 		/*
-		get user input for column and row from user:
-		within user column, if row - 1 is not filled, 
+		get user input for column from user
+		validate column choice
+			within user selected column, if row - 1 is not filled, 
 			make that the user filled column
 			use a for loop or while loop to check if rows below are filled
 
