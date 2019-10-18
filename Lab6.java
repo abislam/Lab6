@@ -30,6 +30,7 @@ public class Lab6{
 
 		//create 2d array for game board : 6 rows 7 columns
 		//fill game board with * representing empty holes
+		//fill with "X" for user1 and "O" for user2
 		String[][] gameBoard = new String[6][7];
 
 		for(int i = 0; i < gameBoard.length; i++){
@@ -40,7 +41,8 @@ public class Lab6{
 			System.out.println("");
 		}
 		
-		//fill with "X" for user1 and "O" for user2
+		
+
 		/*
 		get user input for column from user
 		validate column choice
@@ -48,8 +50,11 @@ public class Lab6{
 			make that the user filled column
 			use a for loop or while loop to check if rows below are filled
 
-
 		*/
+
+			
+
+
 
 	}
 }
